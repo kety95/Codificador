@@ -18,6 +18,15 @@ function criptografar(){
         }
 }
 
+function descriptografar(){
+    
+}
+
+async function copiar(){
+    text = document.getElementsByClassName("right__mensagens__mensagem2")[0].textContent;
+    await navigator.clipboard.writeText(text);
+}
+
 function botaoCopiar(mostrar){
     document.getElementsByClassName("right__botao-copiar")[0].style.display = mostrar? 'inline-block':'none';
 }

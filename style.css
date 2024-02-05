@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800&display=swap');
+
+:root{
+    --background-color: #EFE0F6;
+    --background-right: #FFFFFF;
+    --cor-principal: #873DD9;
+    --background-botao-descriptografar: #DDC4E9;
+    --cor-fonte: #343A40;
+    --fonte: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--fonte);
+    color: var(--cor-fonte);
+}
+
+*{
+    margin: 0em;
+    padding: 0em;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.apresentacao{
+    display: flex;
+    position: relative;
+    gap: 0em;
+}
+
+.logo{
+    margin-top: 2em;
+    position: absolute;
+}
+
+.left{
+    width: 50em;
+    margin-left: 30em;
+    margin-right: 15em;
+    padding-top: 10em;
+    text-align: center;
+    justify-content: center;
+}
+
+.left__campo-texto{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 12em;
+    border: none;
+    vertical-align: top;
+    margin-bottom: 1em;
+    font-size: 3.2rem;
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+}
+
+.left__campo-texto:focus {
+    outline: none;
+    border: none;
+}
+
+.left__campo-texto::placeholder {
+    color: var(--cor-principal);
+}
+
+.left__aviso{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2em;
+    gap: 0.2em;
+    font-size: 1.2rem;
+}
+
+.left__botoes{
+    display: inline-block;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__botoes__botao-criptografar{
+    border: solid 0.1em;
+    border-radius: 1.5em;
+    padding: 1em 5em;
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: var(--background-right);
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.left__botoes__botao-descriptografar{
+    border: solid 0.1em;
+    border-radius: 1.5em;
+    padding: 1em 5em;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: var(--background-botao-descriptografar);
+}
+
+.right{
+    border-radius: 3.2em;
+    background-color: var(--background-right);
+    width: 32em;
+    height: 61em;
+    margin-top: 1%;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.right__ilustracao{
+    width: 80%;
+    margin-top: 40%;
+}
+
+.right__mensagens{
+    margin-bottom: 2em;
+    padding: 2em;
+}
+
+.right__mensagens__mensagem1{
+    font-weight: 800;
+    font-size: 2.0rem;
+    margin-top: 1em;
+}
+
+.right__mensagens__mensagem2{
+    font-weight: 400;
+    white-space: normal;
+    margin-top: 1em;
+    font-size: 1.6rem;
+}
+
+.right__botao-copiar{
+    border: solid 0.1em;
+    border-radius: 1.5em;
+    padding: 1em 5em;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: var(--background-right);
+    margin-bottom: 2em;
+    display: none;
+}

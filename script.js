@@ -2,6 +2,15 @@ let texto;
 let textoCriptografado;
 let textoDescriptografado;
 
+let textarea = document.getElementsByClassName("left__campo-texto")[0];
+
+textarea.addEventListener("input", function() {
+    let texto = textarea.value.trim();
+    if (texto === '') {
+        exibirResultado(null, false);
+    }
+});
+
 function criptografar(){
     coletarTexto();
     if (texto !== '') {
@@ -12,8 +21,7 @@ function criptografar(){
         .replace(/aimes/g, "ai")
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
-        exibirResultado(textoCriptografado);
-        esconderElementos(true);
+        exibirResultado(textoCriptografado, true);
     }
 }
 
@@ -26,16 +34,15 @@ function descriptografar(){
         .replace(/imes/g, "i")
         .replace(/ober/g, "o")  
         .replace(/ufat/g, "u");
-        exibirResultado(textoDescriptografado);
-        esconderElementos(true);
+        exibirResultado(textoDescriptografado, true);
     }
 }
 
-function exibirResultado(texto){
-    document.getElementsByClassName("right__resultado")[0].style.display = "inline-block";
-    document.getElementsByClassName("right__resultado")[0].innerHTML = texto;
-    document.getElementsByClassName("right")[0].style.display = "colum"
-    visibilidadeBotaoCopiar(true);
+function exibirResultado(texto_resultado, mostrar){
+    document.getElementsByClassName("right__resultado")[0].style.display = mostrar? "inline-block" : "none";
+    document.getElementsByClassName("right__resultado")[0].innerHTML = texto_resultado;
+    visibilidadeBotaoCopiar(mostrar? true : false);
+    esconderElementos(mostrar? true : false);
 }
 
 function coletarTexto(){

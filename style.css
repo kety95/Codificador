@@ -135,6 +135,13 @@ body{
     font-size: 1.6rem;
 }
 
+.right__mensagens__resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 .right__botao-copiar{
     border: solid 0.1em;
     border-radius: 1.5em;

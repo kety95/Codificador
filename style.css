@@ -110,6 +110,26 @@ body{
     margin-top: 1%;
     text-align: center;
     margin-right: 2em;
+    display: ;
+}
+
+.right__resultado{
+    font-family: var(--fonte);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--cor-fonte);
+    margin-top: 2em auto;
+    padding: 2em 0em;
+    height: 78%;
+    width: 80%;
+    display: flex;
+    display: none;
+    border: none;
+}
+
+.right__resultado:focus {
+    outline: none;
+    border: none;
 }
 
 .right__ilustracao{
@@ -133,13 +153,6 @@ body{
     white-space: normal;
     margin-top: 1em;
     font-size: 1.6rem;
-}
-
-.right__mensagens__resultado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 .right__botao-copiar{

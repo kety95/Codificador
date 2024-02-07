@@ -30,12 +30,11 @@ body{
     gap: 0em;
     margin: auto;
     box-sizing: border-box;
-    padding: auto;
+    padding-top: 0em;
 }
 
 .logo{
-    margin: 2em 4em;
-    position: absolute;
+    margin: 2em 2em 2em;
 }
 
 .left{
@@ -43,7 +42,8 @@ body{
     width: 50em;
     margin-left: 30em;
     margin-right: 15em;
-    padding-top: 10em;
+    margin-top: 1%;
+    padding-top: 0em;
     text-align: center;
     justify-content: center;
 }
@@ -51,7 +51,7 @@ body{
 .left__campo-texto{
     background-color: var(--background-color);
     width: 100%;
-    height: 12em;
+    height: 14em;
     border: none;
     vertical-align: top;
     margin-bottom: 1em;
@@ -72,10 +72,14 @@ body{
 .left__aviso{
     display: inline-block;
     display: flex;
-    align-items: center;
     margin-bottom: 1.2em;
     gap: 0.2em;
     font-size: 1.2rem;
+    justify-content: center;
+}
+
+.left__aviso__icone{
+    width: 2.5%;
 }
 
 .left__botoes{
@@ -109,10 +113,9 @@ body{
     background-color: var(--background-right);
     min-width: 32em;
     width: 32em;
-    height: 61em;
-    margin-top: 1%;
+    height: 58em;
+    margin: 1% 2em 1% 0em;
     text-align: center;
-    margin-right: 2em;
 }
 
 .right__resultado{
@@ -168,13 +171,13 @@ body{
     display: none;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .logo{
         margin: 2em;
     }
     .apresentacao{
         display: block;
-        padding: 2em;
+        padding: 0em 2em;
         margin: auto;
     }
     .left{
@@ -194,11 +197,11 @@ body{
     }
 
     .left__botoes__botao-criptografar{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 1em 3em;
     }
     .left__botoes__botao-descriptografar{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 1em 3em;
     }
 
@@ -207,6 +210,6 @@ body{
     }
 
     .right__botao-copiar{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }

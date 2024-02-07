@@ -28,10 +28,11 @@ body{
     display: flex;
     position: relative;
     gap: 0em;
+    margin: auto;
 }
 
 .logo{
-    margin-top: 2em;
+    margin: 2em 4em;
     position: absolute;
 }
 
@@ -85,7 +86,7 @@ body{
 .left__botoes__botao-criptografar{
     border: solid 0.1em;
     border-radius: 1.5em;
-    padding: 1em 5em;
+    padding: 1em 6em;
     text-decoration: none;
     background-color: var(--cor-principal);
     color: var(--background-right);
@@ -96,7 +97,7 @@ body{
 .left__botoes__botao-descriptografar{
     border: solid 0.1em;
     border-radius: 1.5em;
-    padding: 1em 5em;
+    padding: 1em 6em;
     text-decoration: none;
     font-size: 1.6rem;
     background-color: var(--background-botao-descriptografar);
@@ -105,6 +106,7 @@ body{
 .right{
     border-radius: 3.2em;
     background-color: var(--background-right);
+    min-width: 32em;
     width: 32em;
     height: 61em;
     margin-top: 1%;
@@ -163,4 +165,42 @@ body{
     background-color: var(--background-right);
     margin-bottom: 2em;
     display: none;
+}
+
+@media (max-width: 1200px){
+    .logo{
+        margin: 2em;
+    }
+    .apresentacao{
+        display: block;
+        padding: 2em;
+        margin: auto;
+    }
+    .left{
+        margin: auto;
+    }
+
+    .left__campo-texto{
+        font-size: 3.0rem;
+    }
+    .left__aviso{
+        font-size: 1.1rem;
+    }
+
+    .left__aviso__icone{
+        width: 2.5%;
+    }
+    .left__botoes{
+       
+    }
+    .left__botoes__botao-criptografar{
+        font-size: 1.2rem;
+    }
+    .left__botoes__botao-descriptografar{
+        font-size: 1.2rem;
+    }
+
+    .right{
+        margin: 1em auto;
+    }
 }

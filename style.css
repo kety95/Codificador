@@ -85,7 +85,7 @@ body{
 }
 
 .left__botoes__botao-criptografar{
-    border: solid 0.1em;
+    border: none;
     border-radius: 1.5em;
     padding: 1em 6em;
     text-decoration: none;
@@ -192,9 +192,7 @@ body{
     .left__aviso__icone{
         width: 2.5%;
     }
-    .left__botoes{
-       
-    }
+
     .left__botoes__botao-criptografar{
         font-size: 1.2rem;
         padding: 1em 3em;
@@ -206,5 +204,9 @@ body{
 
     .right{
         margin: 1em auto;
+    }
+
+    .right__botao-copiar{
+        font-size: 1.2rem;
     }
 }

@@ -1,4 +1,4 @@
-# Olá, bem vindo ao meu projeto de portifólio.
+# Codificador de texto
 
 [Encontre o projeto publicado aqui](https://kety95.github.io/Codificador/)
 
